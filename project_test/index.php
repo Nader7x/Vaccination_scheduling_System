@@ -31,5 +31,5 @@ $result = $mysqli->query($sql);
                 ?>
             </table>
 <?php
-echo"xddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
+echo"sup nader";
 ?>
