@@ -67,6 +67,12 @@ class Admin{
       self::view($query);
       return true;
     }
+    public static function delete_vaccine_center($id)
+    {
+       $query ="DELETE FROM `vaccine_center` WHERE Id=$id";
+       self::view($query);
+       return true;
+    }
     public static function registered_users(){
         $query = "select * from user";
         $result =  self::view($query);
