@@ -61,7 +61,7 @@ class Admin{
       }//kda search sh8al elupdate b2a m3rfsh a3ml 2eh
 
     } //opreation update ir delete 
-    public static function update_vaccine($id,$coulmn_name,$new_value)
+    public static function update_center_vaccine($id,$coulmn_name,$new_value)
     {
       $query = "UPDATE `vaccine_center` SET `$coulmn_name`='$new_value' WHERE ID=$id";
       self::view($query);
@@ -80,5 +80,5 @@ class Admin{
     }
     
 }
-echo Admin::update_vaccine(4,"Contact_no","01554122368");
+echo Admin::update_center_vaccine(4,"Contact_no","01554122368");
 ?>
