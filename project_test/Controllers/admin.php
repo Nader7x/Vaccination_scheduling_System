@@ -55,7 +55,7 @@ class Admin{
       $result = self::view($query);
       while($user =$result->fetch_assoc())
       {
-        //echo $user["Name"]. '---------------'.$user["City"]."<br><br>";
+        echo $user["Name"]. '---------------'.$user["City"]."<br><br>";
         
         
       }//kda search sh8al elupdate b2a m3rfsh a3ml 2eh
@@ -84,7 +84,7 @@ class Admin{
             
         }
     }
-    
+
 }
 echo Admin::update_vaccine_center(4,"Contact_no","01554122368");
 ?>

@@ -67,7 +67,7 @@ class Center{
     
     //methods
     private static function view($query){
-      $mysqli = require __DIR__ .'/../Models/database.php';
+      $mysqli = require_once __DIR__ .'/../Models/database.php';
       if ($mysqli->connect_error){
         die("connection error: ". $mysqli->connect_error);}
       
@@ -92,7 +92,7 @@ class Center{
     public static function vaccination_schedule($vaccine_center_ID){
       
       $query = "select user.Name,reservation.First_dose_date,reservation.Second_dose_date,user.First_dose_state,user.Second_dose_state from reservation JOIN user
-                on user.ID  = reservation.user_id" where reservation.vaccination_center_id = $vaccine_center_ID;
+                on user.ID  = reservation.user_id where reservation.vaccination_center_id = $vaccine_center_ID";
       
       $users_today = array();
       $result = self::view($query);
