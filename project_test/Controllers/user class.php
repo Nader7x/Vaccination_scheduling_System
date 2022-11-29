@@ -66,6 +66,17 @@ class User{
       
        
     }
+    public static function list_of_vaccination()
+    {
+      $query = "select * from vaccine";
+      $result = self::view($query);
+
+      for ($i=0;$user = $result->fetch_assoc();$i++)
+      {
+        echo $user["Name"].$user["Gap"]."<br>";//aw fy array brdo
+        
+      }
+    }
 }
 //User::reservation(NULL);
 ?>
