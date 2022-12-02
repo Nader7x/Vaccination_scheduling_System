@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5be3268d-30b1-4465-abdd-f05a9a77e929" name="Changes" comment="update" />
+    <list default="true" id="5be3268d-30b1-4465-abdd-f05a9a77e929" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/project_test/Models/DatabaseConnectionSingleton.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_test/Models/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_test/Controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/project_test/Controllers/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_test/Controllers/center class.php" beforeDir="false" afterPath="$PROJECT_DIR$/project_test/Controllers/center class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_test/Controllers/user class.php" beforeDir="false" afterPath="$PROJECT_DIR$/project_test/Controllers/user class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_test/Models/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/project_test/Models/database.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,19 +25,24 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="2IBLLPhOf8dNS9tta9lU0OpuVn7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/PHP STORM",
+    "last_opened_file_path": "C:/xampp/php/php.exe",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -48,6 +61,8 @@
       <updated>1669649973425</updated>
       <workItem from="1669649975254" duration="1018000" />
       <workItem from="1669651127771" duration="10162000" />
+      <workItem from="1669997783610" duration="3115000" />
+      <workItem from="1670001315813" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1669651180000</created>
@@ -111,6 +126,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>

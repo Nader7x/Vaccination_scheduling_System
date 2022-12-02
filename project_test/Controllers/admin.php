@@ -2,89 +2,98 @@
 
 class Admin{
     private static function view($query){
-        $mysqli = require __DIR__ .'/../Models/database.php';
-        if ($mysqli->connect_error){
-          die("connection error: ". $mysqli->connect_error);}
+      require_once __DIR__ .'/../Models/database.php';
+      $mysqli = new database();
+
         
         $sql = $query;
-        $result =  $mysqli->query($sql);
+        $result =  $mysqli->conn->query($sql);
         return $result;
       }
     public static function add_city($city) {
-        $mysqli = require __DIR__ .'/../Models/database.php';
+        $query = "INSERT INTO city (City)  VALUES ('$city')";
+        try{$result = self::view($query);
+        return $result;}
 
-        $sql = "INSERT INTO city (City)  VALUES (?)";
-
-        $stmt = $mysqli->stmt_init();
-
-        if (! $stmt->prepare($sql)){die("SQL error: ". $mysqli->erroer);}
-
-        $stmt->bind_param("s",$city);
-        return $stmt->execute();
-
-      }
-
+        catch (Exception $err){
+         
+        die ($err->getMessage());
+      }}
 
     public static function add_vaccination_center($name, $city,$contact_no,$address,$type,$email,$password_hash){
-        $mysqli = require __DIR__ .'/../Models/database.php';
+        
+      $query = "INSERT INTO vaccine_center (Name,City,Contact_no,Address,type,Email,password_hash)  VALUES ('$name','$city','$contact_no','$address','$type','$email','$password_hash')";
 
-        $sql = "INSERT INTO vaccine_center (Name,City,Contact_no,Address,type,Email,password_hash)  VALUES (?,?,?,?,?,?,?)";
-
-        $stmt = $mysqli->stmt_init();
-
-        if (! $stmt->prepare($sql)){die("SQL error: ". $mysqli->erroer);}
-
-        $stmt->bind_param("sssssss",$name,$city,$address,$contact_no,$type,$email,$password_hash);
-        return $stmt->execute();
+      try{$result = self::view($query);
+        return $result;}
+  
+        catch (Exception $err){
+           
+        die ($err->getMessage());
+        }
     }
     public static function add_vaccine($name,$gap,$precautions){
-        $mysqli = require __DIR__ .'/../Models/database.php';
 
-        $sql = "INSERT INTO vaccine (Name,Gap,Pecautions)  VALUES (?,?,?)";
+      $query = "INSERT INTO vaccine (Name,Gap,Pecautions)  VALUES ('$name','$gap','$precautions')";
 
-        $stmt = $mysqli->stmt_init();
-
-        if (! $stmt->prepare($sql)){die("SQL error: ". $mysqli->erroer);}
-
-        $stmt->bind_param("sis",$name,$gap,$precautions);
-        return $stmt->execute();
+      try{$result = self::view($query);
+        return $result;}
+  
+        catch (Exception $err){
+           
+        die ($err->getMessage());
+        }
     }
-    public static function search($city,$operation){
+    public static function search($city){
 
       $query = "SELECT * FROM `vaccine_center` WHERE City='$city'";
-      $result = self::view($query);
+      try{$result = self::view($query);
       while($user =$result->fetch_assoc())
-      {
-        echo $user["Name"]. '---------------'.$user["City"]."<br><br>";
-        
-        
-      }//kda search sh8al elupdate b2a m3rfsh a3ml 2eh
+        {
+          //echo $user["Name"]. '---------------'.$user["City"]."<br><br>";
+          
+          
+        }//kda search sh8al elupdate b2a m3rfsh a3ml 2eh
+      return true;
+      }
+      catch (Exception $err){
 
-    } //opreation update ir delete 
+        die ($err->getMessage());
+        }
+
+    }
     public static function update_vaccine_center($id,$coulmn_name,$new_value)
     {
       $query = "UPDATE `vaccine_center` SET `$coulmn_name`='$new_value' WHERE ID=$id";
-      self::view($query);
-      return true;
+      try{self::view($query);
+        return true;}
+
+      catch (Exception $err){die ($err->getMessage());}
     }
-    public static function delete_vaccine_center($id)
+    public static function delete_vaccine_center($id) //lw mms7sh berg3 true brdo
     {
        $query ="DELETE FROM `vaccine_center` WHERE Id=$id";
-       self::view($query);
-       return true;
+
+       try{return self::view($query);}
+
+       catch (Exception $err){die ($err->getMessage());}
+       
     }
     public static function registered_users(){
-        $query = "select * from user";
+        try{$query = "select * from user";
         $result =  self::view($query);
 
         while($user =$result->fetch_assoc())
         {
-            echo $user["Name"];
+            echo $user["Name"]."<br><br>";
             //echo $user["el Att"] . "<br>" . $user["el Att"]; or return data[] = array($user["el Att"],$user["el Att"])
             
         }
+        return true;}
+        catch (Exception $err){die ($err->getMessage());}
     }
-
+    
 }
-echo Admin::update_vaccine_center(4,"Contact_no","01554122368");
+//echo Admin::delete_vaccine_center(12);
+Admin::registered_users();
 ?>
