@@ -25,9 +25,18 @@
     
 }
 
-.profilelogo{
-    width: 40px;
-    margin-left: 550px;
+.header_buttons{
+        margin: 1%;
+        float: right;
+}
+
+.logout_button{
+    font-size: 29px;
+    padding: 5px;
+}
+.profile_button{
+    font-size: 29px;
+    padding: 5px;
 }
 
 .information{

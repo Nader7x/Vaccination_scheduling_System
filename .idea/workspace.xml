@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5be3268d-30b1-4465-abdd-f05a9a77e929" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/project mesheel/Views/index.js" afterDir="false" />
+    <list default="true" id="5be3268d-30b1-4465-abdd-f05a9a77e929" name="Changes" comment="s&#10;&#10;js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +11,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +64,7 @@
       <workItem from="1669651127771" duration="10162000" />
       <workItem from="1669997783610" duration="3115000" />
       <workItem from="1670001315813" duration="2495000" />
-      <workItem from="1670173357440" duration="1264000" />
+      <workItem from="1670173357440" duration="2106000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1669651180000</created>
@@ -88,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669660735402</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="s&#10;&#10;js">
+      <created>1670175424438</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670175424438</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="s&#10;&#10;js" />
+    <option name="LAST_COMMIT_MESSAGE" value="s&#10;&#10;js" />
   </component>
 </project>

@@ -2,12 +2,11 @@
 <html>
 
 <head>
-  <!-- $url = $_SESSION['photo'];
-  echo '<img class="rounded-circle mt-5" width="180px" alt="your photo" src="'.$url.'" />';                     byzher elswra-->
+
 <meta charset="UTF-8">
 <meta name="vaccination" content="vaccination center">
-<title>admin home</title>
-<link rel="stylesheet" href="css/index.css">
+<title>home</title>
+<link rel="stylesheet" href="css/user home.css">
 
 </head>
 
@@ -17,19 +16,11 @@
   <div class="header">
   
       <a class="homelogo" href="index.html" title="go home" style="text-decoration:none">home page</a>
-  
-<input class="search"  type="search" placeholder="search with city">
-
-        <a class="submit_buttonlink" href="alter.html" title="add vaccine">
-        <button class="search_button" type="button" title="submit" >search</button> 
-      </a></li>
 
 
-  
-      <a class="profilelogo" href="" title="go home" >
-        <img class="profilelogo" title="go to profile" src="images/user-modified.png" alt="profile logo" >
-      </a>
-  
+      <form action="login.html" class="header_buttons"> <input type="submit" class="logout_button" value="logout"> </form>
+      <form action="profile.html" class="header_buttons"> <input type="submit" class="profile_button" value="profile"> </form>
+      
     </div>
   
   
@@ -72,12 +63,12 @@
 <div class="buttons">  
   <ul class="editing_list" >
     
-    <li>add vaccination center<br><a class="submit_buttonlink" href="add vaccination center.html" title="add center">
-      <button class="submit_button" type="button" title="submit" >add center</button> 
+    <li>certificate file<br><a class="submit_buttonlink" href="certificate.html" title="certificate">
+      <button class="submit_button" type="button" title="submit" >Check Certificate</button> 
     </a></li>
 
-    <li>add vaccine<br><a class="submit_buttonlink" href="add vaccine.html" title="add vaccine">
-      <button class="submit_button" type="button" title="submit" >add vaccine</button> 
+    <li>reserve vaccine<br><a class="submit_buttonlink" href="reservation.html" title="add vaccine">
+      <button class="submit_button" type="button" title="submit" >Reserve</button> 
     </a></li>
 
 
