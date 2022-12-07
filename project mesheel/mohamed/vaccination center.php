@@ -6,7 +6,9 @@ require_once  __DIR__ .'/../Models/center class.php';
 $arr = Center::vaccination_schedule(1);
 if(isset($_POST['confirm_dose'])) {
 
-    try{Center::confirm_dose($_POST['confirm_dose']);}
+    try{Center::confirm_dose($_POST['confirm_dose']);
+        header("location: ../mohamed/vaccination center.php");}
+
     catch (Exception $err){
 
         die ($err->getMessage());

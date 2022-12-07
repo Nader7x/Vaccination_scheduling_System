@@ -39,7 +39,7 @@ class Center{
       {
 
         date_default_timezone_set('Africa/Cairo');
-        if (($user["First_dose_date"] === date('Y-m-d') and $user["First_dose_state"] ==="0") or ($user["Second_dose_date"] === date('Y-m-d') and $user["Second_dose_state"] ==="0"))
+        if (($user["First_dose_date"] == date('Y-m-d') and $user["First_dose_state"] =="0") or ($user["Second_dose_date"] == date('Y-m-d') and $user["Second_dose_state"] =="0"))
         {
           $users_today[$i]["Name"] = $user["Name"];
           $users_today[$i]["Reservation_number"] = $user["Reservation_number"];
@@ -67,7 +67,7 @@ class Center{
         
 
       }
-      elseif ( $user["Second_dose_state"] === "0")
+      elseif ( $user["Second_dose_state"] === "0" and $user["First_dose_state"] === "1" )
       {
         
         $query = "UPDATE `user` SET `Second_dose_state`=1 WHERE ID=$user_id";
