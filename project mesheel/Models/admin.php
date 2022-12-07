@@ -111,6 +111,16 @@ class Admin{
 
       return $array;
     }
+    public static function get_all_cities(){
+      $query = "select * from city";
+      $result = self::view($query);
+      $arr = array();
+      for ($i=0;$user = $result->fetch_assoc();$i++)
+      {
+        $arr[$i] = $user["City"];
+      }
+      return $arr;
+    }
     
 }
 //echo Admin::delete_vaccine_center(200);
