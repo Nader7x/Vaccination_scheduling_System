@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="vaccination" content="vaccination center">
+        <title>profile</title>
+        <link rel="stylesheet" href="css/profile.css">
+        <script src="https://kit.fontawesome.com/39308665b1.js" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+
+  
+        <header>
+            <a href="user home.html" title="go home" class="logo">
+                <i class="fa-solid fa-virus-covid"></i>vaccineto
+            </a>
+                <img src="" alt="">
+    
+                <a href="profile.html" class="button">profile</a>
+                <a href="login.html" class="button">logout</a>
+        </header>  
+         <div class="container">
+            <div class="wrapper">
+            <a href="#">
+            <img src="/xampp/htdocs/project mesheel/uploads/stdimg/download.png " alt="">
+            </a>
+            <div class="title">
+                name
+            </div>
+            <div class="place">
+                cairo
+            </div>
+            </div>
+            <div class="content">
+            <p>
+                phone number : 010098123 <br> national_id: 30300921
+            </p>
+            </div>
+
+        </div>
+        <script>
+            const img = document.querySelector("img");
+            const icons = document.querySelector(".icons");
+            img.onclick = function(){
+            this.classList.toggle("active");
+            icons.classList.toggle("active");
+            }
+        </script>
+
+
+
+
+    </body>
+
+</html>
