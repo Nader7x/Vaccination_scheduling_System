@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 
 <head>
 
@@ -27,32 +27,30 @@
 
 
 <form>
-    <div class="information">
+    <div id="box" class="information">
         <table border="1" class="information_table">
+
+            <thead>
             <tr>
                 <th>name</th>
                 <th>reservation number</th>
                 <th>confirm dose</th>
             </tr>
-            
+            </thead>
+
+
             <tr>
                 <td>ali</td>
                 <td>0100100</td>
 
-                <td><form action="" class="header_buttons"> <input type="submit" class="submit_button" value="confirm dose">
+                <td><form action="" class="header_buttons"> <input type="submit" onclick="hideButton(this)" class="submit_button" value="confirm dose">
+                    <script src="index.js"></script>
                  </form>
                 </td>
             </tr>
-            
-            <tr>
-                <td>ahmed</td>
-                <td>567565</td>
 
 
-                <td>     <form action="" class="header_buttons"> <input type="submit" class="submit_button" value="confirm dose"> </form>
-                </td>
-            </tr>
-            
+        </table>
     </div>
     </form>
 
@@ -72,8 +70,6 @@
         </ul>
       
       </div>
-
-</table>
 
 
 </body>
