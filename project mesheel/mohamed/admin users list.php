@@ -57,7 +57,6 @@ $arr = Admin::registered_users();
           <tbody>
               <?php
               for ($i=0;$i<count($arr);$i++){
-                var_dump( $arr[$i]);
                 echo "       
                             
               <tr>

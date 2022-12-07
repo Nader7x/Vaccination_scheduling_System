@@ -3,7 +3,7 @@
 class Center{
     //methods
     private static function view($query){
-      require_once __DIR__ .'/../Models/database.php';
+      require_once __DIR__ .'/../Include/database.php';
       $mysqli = new database();
 
         
@@ -30,19 +30,21 @@ class Center{
     }
     public static function vaccination_schedule($vaccine_center_ID){
       
-      $query = "select user.Name,reservation.First_dose_date,reservation.Second_dose_date,user.First_dose_state,user.Second_dose_state from reservation JOIN user
+      $query = "select user.Name,reservation.First_dose_date,reservation.Second_dose_date,user.First_dose_state,user.Second_dose_state ,user.Reservation_number, user.ID from reservation JOIN user
                 on user.ID  = reservation.user_id where reservation.vaccination_center_id = $vaccine_center_ID";
       
       $users_today = array();
       $result = self::view($query);
-      for ($i=0;$user = $result->fetch_assoc();$i++)
+      for ($i=0;$user = $result->fetch_assoc();)
       {
 
         date_default_timezone_set('Africa/Cairo');
         if (($user["First_dose_date"] === date('Y-m-d') and $user["First_dose_state"] ==="0") or ($user["Second_dose_date"] === date('Y-m-d') and $user["Second_dose_state"] ==="0"))
         {
-          $users_today[$i] = $user["Name"];
-          
+          $users_today[$i]["Name"] = $user["Name"];
+          $users_today[$i]["Reservation_number"] = $user["Reservation_number"];
+          $users_today[$i]["UserID"] = $user["ID"];
+          $i++;
         }
         
       }
@@ -81,15 +83,5 @@ class Center{
 
 
 
-/*
-var_dump(Center::vaccination_schedule());
-Center::certificate(2);
-Center::certificate(4);
 
-
-Center::confirm_dose(2);
-
-Center::vaccination_schedule()
-Center::view_user_info("345");
-*/
 ?>

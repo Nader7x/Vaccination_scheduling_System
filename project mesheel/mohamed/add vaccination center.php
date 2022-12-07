@@ -21,7 +21,7 @@ $arr = Admin::get_all_cities();
   <body>
 
     <header>
-      <a href="vaccination center.html" class="logo">
+      <a href="vaccination center.php" class="logo">
           <i class="fa-solid fa-virus-covid"></i>vaccineto
       </a>
           
