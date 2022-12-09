@@ -100,7 +100,20 @@ header{
 .content-table tbody tr:last-of-type{
     border-bottom: 2px solid #06a0d6;
 } */
-
+.button{
+    padding: 0.7rem 1.4rem;
+    background: #008bc6;
+    color: #fff;
+    font-weight: 100;
+    border-radius: 15px;
+    font-family: fantasy;
+    font-weight: 100;
+    letter-spacing:2px;
+    font-size: 19px;
+}
+.button:hover{
+    background: #004d6f;
+}
 
 
 
@@ -134,7 +147,7 @@ header{
 .table thead tr th{
     border-radius: 5px 5px 0 0;
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     letter-spacing: 0.35px;
     opacity: 1;
     padding: 12px;
@@ -158,7 +171,7 @@ header{
     display: inline-block;
     background-color: #24252a;
     color: white;
-    font-weight: medium;
+    font-weight: 500;
     text-align: center;
     vertical-align: middle;
     user-select: none;

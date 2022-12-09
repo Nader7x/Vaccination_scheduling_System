@@ -49,7 +49,20 @@ header{
     display:flex;
     column-gap: 5rem;
 }
-
+.button{
+    padding: 0.7rem 1.4rem;
+    background: #008bc6;
+    color: #fff;
+    font-weight: 100;
+    border-radius: 15px;
+    font-family: fantasy;
+    font-weight: 100;
+    letter-spacing:2px;
+    font-size: 19px;
+}
+.button:hover{
+    background:#004664;
+}
 
 
 

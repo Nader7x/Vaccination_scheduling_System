@@ -61,9 +61,8 @@ header{
     font-size: 19px;
 }
 .button:hover{
-    background: #004664;
+    background:#004664;
 }
-
 
 
 @media (max-width:991px){
@@ -225,17 +224,7 @@ td{
     color: white;
 }
 
-.button{
-    padding: 0.7rem 1.4rem;
-    background: #000000;
-    color: rgb(250, 16, 16);
-    font-weight: 100;
-    border-radius: 15px;
-    font-family: fantasy;
-    font-weight: 100;
-    letter-spacing:2px;
-    font-size: 19px;
-}
+
 
 /*--------------------- */
 

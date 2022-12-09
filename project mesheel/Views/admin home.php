@@ -3,7 +3,7 @@
 <?php 
 
 session_start();
-if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
+//if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
 require_once  __DIR__ .'/../Models/admin.php';
 $arr = Admin::list_of_vaccination_center();
 if(isset($_POST['add_city'])) {
@@ -138,4 +138,4 @@ if(isset($_POST['add_city'])) {
 
 
 </html>
-<?php } ?>
+<?php //} ?>
