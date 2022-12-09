@@ -36,8 +36,8 @@ if(isset($_POST['confirm_dose'])) {
     <a href="vaccination center.html" class="logo">
         <i class="fa-solid fa-virus-covid"></i>vaccineto
     </a>
-      <a href="login.html" class="button">logout</a>
-      <form class="header" action="center view users.html">
+      <a href="" class="button">logout</a>
+      <form class="header" action="center view users.php">
           <ul class="nav">
               <input class="search-box"  type="search" placeholder="search with reservation number.....">
           </ul>
