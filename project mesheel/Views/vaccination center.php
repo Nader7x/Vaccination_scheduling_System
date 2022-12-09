@@ -36,12 +36,13 @@ if(isset($_POST['confirm_dose'])) {
     <a href="vaccination center.html" class="logo">
         <i class="fa-solid fa-virus-covid"></i>vaccineto
     </a>
-        
-        <form class="header" action="center view users.html">
-        <ul class="nav">
-          <input class="search"  type="search" placeholder="search with reservation number">
-        </ul>
-        </form>
+      <a href="login.html" class="button">logout</a>
+      <form class="header" action="center view users.html">
+          <ul class="nav">
+              <input class="search-box"  type="search" placeholder="search with reservation number.....">
+          </ul>
+          <input class="search-btn" type="submit" value="search">
+      </form>
         
 </header>  
 
@@ -61,8 +62,8 @@ if(isset($_POST['confirm_dose'])) {
       <?php
       for ($i=0;$i<count($arr);$i++){
 
-          echo "       
-                            
+          echo "
+
               <tr>
                   <td data-label="."name".">".$arr[$i]["Name"]."</td>
                   <td data-label="."reservation number".">".$arr[$i]["Reservation_number"]."</td>

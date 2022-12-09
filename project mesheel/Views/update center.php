@@ -10,13 +10,13 @@ if(isset($_POST['alter'])) {
 }
 
 
-if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
+//if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
   require_once  __DIR__ .'/../Models/admin.php';
   $arr = Admin::get_all_cities();
 
 
 if(isset($_POST['submit'])) {
-  
+
   try{
     if(!empty($_POST['new_value']))
     {Admin::update_vaccine_center($_SESSION["vaccine_center_id"],$_POST['coulmn_name'],$_POST['new_value']);}
@@ -26,7 +26,7 @@ if(isset($_POST['submit'])) {
     header("location: ../Views/admin home.php");
 }
   catch (Exception $err){
-  
+
       die ($err->getMessage());
   }
 }
@@ -55,10 +55,10 @@ if(isset($_POST['submit'])) {
       </a>
       <a href="../Controllers/logout.php" class="button">logout</a>
       <form class="header" action="alter_center.php" method="post">
-        <ul class="nav">
-          <input class="search" name="center_city"  type="search" placeholder="search with city">
-        </ul>
-        <input type="submit"  value="search" name='search'>
+          <ul class="nav">
+              <input class="search-box" name="center_city"  type="search" placeholder="search with city....">
+          </ul>
+          <input class="search-btn"  type="submit"   value="search" name='search'>
         </form>
           
   </header>   
@@ -88,7 +88,7 @@ if(isset($_POST['submit'])) {
 
                       <div class="user-input-box">
                         <select id="row" class="input"  style="visibility:hidden;" name ="new_value2" required>
-                          <option value="none" selected disabled hidden>Enter city name</option>  
+                          <option value="none" selected disabled hidden>Enter city name</option>
                           <?php
                             foreach($arr as $city){
                               echo "
@@ -134,4 +134,4 @@ if(isset($_POST['submit'])) {
 
 
 </html>
-<?php }?>
+<?php //}?>

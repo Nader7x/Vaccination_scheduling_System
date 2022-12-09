@@ -9,12 +9,12 @@
 </head>
 <body>
         <div class="form">
-                <form action="../Controllers/user_reg.php" method="post" enctype="multipart/form-data">
+                <form action="../Models/vacc_reg.php" method="post">
                         <h1 class="form-title">Registration</h1>
                         <div class="main-user-info">
                                 <div class="user-input-box">
                                         <label for="username">Full Name</label><br>
-                                        <input id="fullname" type="text" class="box" name="name" placeholder="full Name"autofocus required>
+                                        <input id="fullname" type="text" class="box" name="name"placeholder="full Name"autofocus required>
                                 </div>
                                 
 
@@ -28,13 +28,21 @@
                                         <label for="national_id">National ID</label><br>
                                         <input id="national_id" type="text" class="box" name="national_id"placeholder="enter national_id"autofocus required  pattern="[0-9]{14}">
                                 </div>
+
+                                <div class="user-input-box">
+                                        <label for="phone">Phone number</label><br>
+                                        <input id="phone" type="text" class="box" name="phone"placeholder="enter phone"autofocus required  pattern="[0-9]{11}">
+                                </div>
                                 
 
                                 <div class="user-input-box">
                                         <label for="address">Address</label><br>
                                         <input id="address" type="text" class="box" name="address"placeholder="Address"autofocus required>
                                 </div>
-                                
+                                <div class="user-input-box">
+                                        <label for="photo">add photo</label><br>
+                                        <input id="photo" type="file" class="box" name="photo"placeholder="photo"autofocus required>
+                                </div>
 
                                 <div class="user-input-box">
                                         <label for="email">Email</label><br>
@@ -48,11 +56,6 @@
                                 <div class="user-input-box">
                                         <label for="password2">confirmation password</label><br>
                                         <input type="password" id="password2" class="box" name="password2" placeholder="Password Confirmation"autofocus required>
-                                        
-                                </div>
-                                <div class="user-input-box">
-                                        <label for="photo">add photo</label><br>
-                                        <input id="photo" type="file" class="box" name="file"placeholder="photo"autofocus required>
                                 </div>
 
 
@@ -66,10 +69,11 @@
 
                         <div class="form-submit-btn">
                                 <input type="submit"  class="button" value="submit" onclick="return confirmpassword(password.password2)">
-                        </div>
-                        
+                        </div><br><br><br>
+                        <a href="login.html" class="buttonn">already have an account ?</a>
 
                 </form>
+                
                 </div>
                 <script>
                         function confirmpassword(input){

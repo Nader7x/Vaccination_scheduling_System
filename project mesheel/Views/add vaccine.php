@@ -28,10 +28,10 @@ if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
       </a>
       <a href="../Controllers/logout.php" class="button">logout</a>
       <form class="header" action="alter_center.php" method="post">
-        <ul class="nav">
-          <input class="search" name="center_city"  type="search" placeholder="search with city">
-        </ul>
-        <input type="submit"  value="search" name='search'>
+          <ul class="nav">
+              <input class="search-box" name="center_city"  type="search" placeholder="search with city....">
+          </ul>
+          <input class="search-btn"  type="submit"   value="search" name='search'>
         </form>
           
   </header>    

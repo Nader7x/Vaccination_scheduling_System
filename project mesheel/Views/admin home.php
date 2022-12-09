@@ -3,7 +3,7 @@
 <?php 
 
 session_start();
-//if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
+if(isset($_SESSION["log_as"]) and $_SESSION["log_as"] === "admin"){
 require_once  __DIR__ .'/../Models/admin.php';
 $arr = Admin::list_of_vaccination_center();
 if(isset($_POST['add_city'])) {
@@ -46,9 +46,10 @@ if(isset($_POST['add_city'])) {
       <a href="../Controllers/logout.php" class="button">logout</a>
       <form class="header" action="alter_center.php" method="post">
         <ul class="nav">
-          <input class="search" name="center_city"  type="search" placeholder="search with city">
+
+          <input class="search-box" name="center_city"  type="search" placeholder="search with city....">
         </ul>
-        <input type="submit"  value="search" name='search'>
+        <input class="search-btn"  type="submit"   value="search" name='search'>
         </form>
           
   </header>  
@@ -138,4 +139,4 @@ if(isset($_POST['add_city'])) {
 
 
 </html>
-<?php //} ?>
+<?php } ?>
