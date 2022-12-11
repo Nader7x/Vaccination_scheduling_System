@@ -12,6 +12,7 @@
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
+  <component name="PsalmOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
 </project>
