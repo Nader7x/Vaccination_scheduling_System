@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5be3268d-30b1-4465-abdd-f05a9a77e929" name="Changes" comment="s&#10;&#10;js">
+    <list default="true" id="5be3268d-30b1-4465-abdd-f05a9a77e929" name="Changes" comment="s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project mesheel/Views/Registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/Registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/add vaccination center.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/add vaccination center.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/add vaccine.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/add vaccine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/admin home.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/admin home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/admin users list.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/admin users list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/alter_center.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/alter_center.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/Registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/Registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/add vaccination center.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/add vaccination center.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/add vaccine.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/add vaccine.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/admin users list.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/admin users list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/alter.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/alter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/update center.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/update center.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/css/vaccination center.css" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/css/vaccination center.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/update center.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/update center.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project mesheel/Views/vaccination center.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/vaccination center.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project mesheel/Views/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/project mesheel/Views/reservation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,24 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/php/php.exe",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/php/php.exe&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,6 +72,7 @@
       <workItem from="1670001315813" duration="2495000" />
       <workItem from="1670173357440" duration="6870000" />
       <workItem from="1670411480368" duration="2000" />
+      <workItem from="1670675109616" duration="166000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1669651180000</created>
